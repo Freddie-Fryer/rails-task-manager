@@ -8,12 +8,17 @@ class TasksController < ApplicationController
   end
 
   def new
+    @task = Task.new
   end
 
   def create
+    raise
+    @task = Task.new(params[:restaurant])
+    @task.save
   end
 
   def edit
+    @task = Task.find(params[:id])
   end
 
   def update
