@@ -1,0 +1,9 @@
+<h1>
+  <% if @task.completed %>
+    <i class="fa fa-check-square-o"></i> - 
+  <% else %>
+    <i class="fa fa-square-o"></i> - 
+  <% end %>
+  <%= @task.title %> - 
+  <%= @task.details %>
+</h1>
